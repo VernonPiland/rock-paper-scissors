@@ -1,4 +1,5 @@
 function getComputerChoice(){
-    let computerChoice = Math.random()*3;
+    let computerChoice = Math.floor(Math.random()*3);
     return computerChoice;
 }
+console.log(getComputerChoice());
