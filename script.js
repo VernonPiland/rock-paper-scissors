@@ -1,5 +1,16 @@
 function getComputerChoice(){
     let computerChoice = Math.floor(Math.random()*3);
-    return computerChoice;
+    if(computerChoice === 0){
+        return 'rock';
+    }
+    else if(computerChoice === 1){
+        return 'paper';
+    }
+    else if(computerChoice === 2){
+        return 'scissors'
+    }
+    else{
+        return 'N/A choice'
+    }
 }
 console.log(getComputerChoice());
