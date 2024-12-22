@@ -29,21 +29,21 @@ function getHumanChoice(){
             return 'N/A'
     }
 }
-function playRound(humanChoice, computerChoice){
-    if(humanChoice === computerChoice){
+function playRound(humanSelection, computerSelection){
+    if(humanSelection === computerSelection){
         return `It's a tie you both pick ${humanChoice}`;
     }
-    else if(humanChoice === 'rock' && computerChoice === 'scissors'){
+    else if(humanSelection === 'rock' && computerSelection === 'scissors'){
         return 'You Win! Rock beats Scissors';
     }
-    else if(humanChoice === 'paper' && computerChoice === 'rock'){
+    else if(humanSelection === 'paper' && computerSelection === 'rock'){
         return 'You Win! Paper beats Rock';
     }
-    else if(humanChoice === 'scissors' && computerChoice === 'paper'){
+    else if(humanSelection === 'scissors' && computerSelection === 'paper'){
         return 'You Win! Scissors beats Paper';
     }
     else{
-        return `You Lose! ${computerChoice} beats ${humanChoice}`;
+        return `You Lose! ${computerSelection} beats ${humanSelection}`;
     }
 }
 
@@ -51,6 +51,6 @@ let humanScore = 0;
 let computerScore = 0;
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
-console.log(getComputerChoice());
-console.log(getHumanChoice());
+console.log(humanSelection);
+console.log(computerSelection);
 console.log(playRound(humanSelection, computerSelection));
