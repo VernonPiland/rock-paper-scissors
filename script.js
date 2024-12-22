@@ -31,7 +31,7 @@ function getHumanChoice(){
 }
 function playRound(humanChoice, computerChoice){
     if(humanChoice === computerChoice){
-        return 'It\'s a tie';
+        return `It's a tie you both pick ${humanChoice}`;
     }
     else if(humanChoice === 'rock' && computerChoice === 'scissors'){
         return 'You Win! Rock beats Scissors';
