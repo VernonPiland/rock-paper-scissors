@@ -13,4 +13,19 @@ function getComputerChoice(){
         return 'N/A choice'
     }
 }
-console.log(getComputerChoice());
+function getHumanChoice(){
+    let humanChoice = prompt('rock, paper, scissors');
+    switch(humanChoice){
+        case 'rock':
+            return 'rock'
+            break;
+        case 'paper':
+            return 'paper';
+            break;
+        case 'scissors':
+            return 'scissors'
+            break;
+        default:
+            return 'N/A'
+    }
+}
